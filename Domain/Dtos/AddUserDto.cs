@@ -1,0 +1,15 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace Domain.Dtos;
+public class AddUserDto{
+    
+    public int Id { get; set; }
+    [Required(ErrorMessage = "Name name should not be empty")]
+    public  string Name { get; set; }
+
+     [Required(ErrorMessage = "MobileNumber name should not be empty")]
+    public string MobileNumber { get; set; }
+    public string Email { get; set; }
+     [Required(ErrorMessage = "Password name should not be empty")]
+    public int Password{get;set;}
+}
